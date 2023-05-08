@@ -35,11 +35,24 @@ nav {
     color :lighgary;
 }
 */
-.limliedOffer {
+
+.limitedOffer:hover {
   font-size: 20px;
-  border-bottom: 2px solid green;
+  border: 2px solid green;
   cursor: pointer;
+  border-radius: 10px;
+  color:green;
+  padding: 2px;
+  transition: all 1s ease-in-out;
+  
 }
+.box:hover{
+  background-color:greenyellow;
+  padding: 10px;
+  border-radius: 20px;
+  transition: all 1s ease-in-out;
+}
+
 
 /* Nav Bottom CSS */
 
@@ -63,12 +76,14 @@ nav {
   /* search on google : Clip path generator  */
   /*clip-path: polygon(25% 0%, 100% 0%, 99% 99%, 0 90%);*/
   overflow: hidden;
+  /* animation-keyframes uses */
 }
 
 .sliderWrapper {
   display: flex;
   width: 500vw;
   transition: all 1s ease-in-out;
+  /*transition: 0.2s background ease-in-out;*/
 }
 .sliderItem {
   width: 100vw;
@@ -99,6 +114,7 @@ nav {
   position: absolute;
   top: 100px;
   left: 350px;
+  /*box-sizing: border-box;*/
 }
 .sliderImg {
   z-index: 1;
@@ -107,6 +123,7 @@ nav {
   position: absolute;
   top: 160px;
   left: 370px;
+  /*transform: rotate(-20deg);*/
 }
 
 .sliderTitle {
@@ -118,6 +135,7 @@ nav {
   text-align: center;
   color: white;
   z-index: 1;
+  /*line-height: 1.6rem; - for gap between the lines */
 }
 .sliderPrice {
   position: absolute;
@@ -129,17 +147,22 @@ nav {
   color: white;
   border: 1px solid gray;
   z-index: 1;
+  /*
+ transform:scale(1.1);
+*/
 }
 .buyButton {
   position: absolute;
-  top: 50%;
-  right: 10%;
+  top: 350px;
+  right: 450px;
   font-size: 30px;
   font-weight: 900;
   color: white;
   border: 1px solid grey;
   cursor: pointer;
-  background: black;
+  background: rgb(193, 19, 196);
+  border-radius: 20px;
+  padding: 5px 8px;
   z-index: 1;
 }
 .buyButton:hover {
